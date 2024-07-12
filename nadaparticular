@@ -1,0 +1,6 @@
+etiquetado:
+deben agregar las etiquetas E_datio, E_usuario o E_externo
+solo 1 de ellas si fue tema nuestro es E_datio
+si el usuario la regó E_usuario
+y si fue por temas de ldap, artifactory, armadillo, FG o cualquier cosa que nosostros no administramos E_externo
+es muy importante que se agreguen ya que se sacan metricas de esos datos
