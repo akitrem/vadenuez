@@ -1,0 +1,4 @@
+esde la vpn de españa, nos conectamos al id2 y puedes brincar a las máquinas de ccr:
+root@atrejo-Latitude-5480:/home/atrejo# ssh id2-es-live
+Last login: Fri Feb 26 19:50:50 2021 from 10.51.37.90
+[cloud-user@id2 DPYL1TC ~]$ ssh MB95576@bootstrap-1@ssh
