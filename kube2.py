@@ -6,7 +6,9 @@ config.load_kube_config()
 
 namespace = input("Ingresa el nombre del namespace: ")
 name = input("Ingresa el nombre para el deployment: ")
+servicio = input("Ingresa el nombre del servicio: ")
 imagen = input("ingresa el nombre de la imagen: ")
+
 
 def create_namespace(name):
     api = client.CoreV1Api()
@@ -39,10 +41,7 @@ def create_service(name, namespace, port):
     )
     api.create_namespaced_service(namespace, service)
 
-print(namespace)
-print(name)
-print(imagen)
 
 create_namespace(namespace)
 create_deployment(name, namespace, imagen)
-create_service("my-web-app-svc", namespace, 9090)
+create_service(servicio, namespace, 9090)
